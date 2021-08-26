@@ -5,18 +5,32 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JavaScript API</title>
+		<style>
+			.country,
+			#details {
+				border: 2px solid brown;
+				padding: 10px;
+				margin: 10px;
+				border-radius: 10px;
+			}
+			#countries {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+			}
+		</style>
 	</head>
 	<body>
 		<section>
 			<h1>Kanye Quetes</h1>
-            <button  onclick="loadQuotes()">Quotes</button>
+			<button onclick="loadQuotes()">Quotes</button>
 			<blockquote id="quote"></blockquote>
 
-            <div id="quote-div">
-                <h1>GET Buddies</h1>
-
-            </div>
-            
+			<div id="quote-div">
+				<h1>GET Buddies</h1>
+			</div>
+			<h1>Countries Api</h1>
+			<div id="details"></div>
+			<div id="countries"></div>
 		</section>
 		<script src="app.js"></script>
 	</body>
